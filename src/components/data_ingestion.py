@@ -7,7 +7,7 @@ import pandas as pd
 
 @dataclass
 class DataIngestionConfig:
-    raw_data_path:str = os.path.join('aritifacts','raw_data.csv')
+    raw_data_path:str = os.path.join('artifacts','raw_data.csv')
 
 
 class DataIngestion:
@@ -22,10 +22,11 @@ class DataIngestion:
             df = pd.read_csv(file_path) 
             logging.info("Dataset successfully loaded into a DataFrame.")
 
-            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path))
-            df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
+            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
+            df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
+            logging.info(f"Raw data saved at: {self.ingestion_config.raw_data_path}")
 
-            return df,self.ingestion_config.raw_data_path
+            return df, self.ingestion_config.raw_data_path
 
         except Exception as e:
             logging.error(f"Unexpected error: {e}")
