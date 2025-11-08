@@ -43,7 +43,7 @@ class DataPreprocessing:
                     df[col] = df[col].fillna(df[col].mean())
                 else:
                     df[col] = df[col].fillna(df[col].mode()[0])
-            logging.info("Handed All the Missing Values and duplicates")
+            logging.info("Handled All the Missing Values and duplicates")
 
             constant_cols = [col for col in df.columns if df[col].nunique() == 1]
             if constant_cols:

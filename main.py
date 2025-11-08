@@ -1,5 +1,6 @@
 from src.components.data_ingestion import DataIngestion
 from src.components.data_preprocessing import DataPreprocessing
+from src.components.data_transformation import DataTransformation
 from src.logger import logging
 
 if __name__ == "__main__":
@@ -12,11 +13,11 @@ if __name__ == "__main__":
         cleaned_df = preprocessor.initiate_data_preprocessing(df)
         logging.info("Data Preprocessing Completed")
 
-        print("\n✅ Preprocessing completed successfully!")
-        print(f"Cleaned data shape: {cleaned_df.shape}")
-        print(f"Columns: {list(cleaned_df.columns)}")
-        logging.info("Main script executed successfully.")
+        transformation = DataTransformation()
+        train_data , test_data ,preprocessor = transformation.initiate_data_transformation(cleaned_df)
+        logging.info("Data Transformation Completed")
 
+        
     except Exception as e:
         logging.error(f"Error occurred while testing preprocessing: {e}")
         print(f"❌ Error: {e}")
