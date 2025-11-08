@@ -17,7 +17,7 @@ ML-Project2 is an end-to-end machine learning project for regression tasks. It i
 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/Immanuel2004/Ml-Project2.git
 cd ML-Project2
 ```
 
