@@ -1,2 +1,6 @@
 seaborn
 setuptools
+pandas 
+numpy 
+scikit-learn
+ipykernel 

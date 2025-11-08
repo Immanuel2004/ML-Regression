@@ -1,0 +1,7 @@
+mentor_course_topic_id,mentor_course_id,topic_type_id,topic_type,title,status,created_by,created_at,updated_by,updated_at
+1,1,1,VIDEO,"Introduction to program",ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
+2,1,2,VIDEO,"Understanding the learner's journey",ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
+3,1,3,VIDEO,"Workbook and Idea Submission",ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
+4,1,4,VIDEO,"Teacher Roles and Responsibilities",ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
+5,1,4,ATTACHMENT,Handbook,ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
+6,1,5,ATTACHMENT,Congratulations,ACTIVE,0,"0000-00-00 00:00:00",0,"0000-00-00 00:00:00"
