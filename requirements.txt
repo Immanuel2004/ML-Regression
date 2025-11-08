@@ -6,3 +6,5 @@ scikit-learn
 ipykernel 
 xgboost
 catboost
+mlflow
+dagshub
