@@ -1,6 +1,6 @@
 # ML-Project - Regression 
 
-ML-Project2 is an end-to-end machine learning project for regression tasks. It includes modules for data ingestion, preprocessing, exploratory data analysis (EDA), feature transformation, model training, and prediction pipelines. This project is structured to be modular, maintainable, and scalable for real-world ML applications.
+ML-Project is an end-to-end machine learning project for regression tasks. It includes modules for data ingestion, preprocessing, exploratory data analysis (EDA), feature transformation, model training, and prediction pipelines. This project is structured to be modular, maintainable, and scalable for real-world ML applications.
 
 ## Features
 
